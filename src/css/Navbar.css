@@ -1,0 +1,113 @@
+.navbar {
+  background: rgb(1, 19, 42);
+  padding: 1rem 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+/* Brand */
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #21d07a;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Links container */
+
+.navbar-links {
+  display: flex;
+  gap: 1.8rem;
+}
+
+/* Individual links */
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+
+  color: #fff;
+  text-decoration: none;
+
+  position: relative;
+
+  transition: 
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+.theme-toggle-btn {
+  margin-left: 12px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Hover effect */
+
+.nav-link:hover {
+  background: rgba(33, 208, 122, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 208, 122, 0.35);
+}
+
+/* Active link (optional) */
+
+.nav-link.active {
+  background: #21d07a;
+  color: #090226;
+  box-shadow: 0 4px 12px rgba(33, 208, 122, 0.6);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-links {
+    gap: 0.8rem;
+  }
+
+  .nav-link {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
