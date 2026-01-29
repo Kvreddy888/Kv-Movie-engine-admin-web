@@ -10,7 +10,6 @@ function NavBar(){
         <div className="navbar-links">
             <Link to="/" className="nav-link">Home</Link>
              <Link to="/Favorites" className="nav-link">Favorites</Link>
-             {/* Theme Toggle Button */}
         <button className="theme-toggle-btn" onClick={toggleTheme}>
           {theme === "dark" ? "☀" : "🌙"}
         </button>
